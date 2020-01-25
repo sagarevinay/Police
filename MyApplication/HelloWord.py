@@ -21,6 +21,5 @@
 # print(Title[:9])
 # print(Title[1:-1])
 
-print("Hello")
 
 
