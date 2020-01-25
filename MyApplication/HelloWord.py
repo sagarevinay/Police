@@ -21,5 +21,47 @@
 # print(Title[:9])
 # print(Title[1:-1])
 
+# First = "Vinay"
+# Last = "Sagare"
+# Message = f'{First} {Last} is a Coder'
+# print(Message)
 
+# Len Function
+# Course = 'Python is programming language'
+# print(len(Course))
+# print(Course.upper())
+# Course = 'VINAY SAGARE'
+# print(Course.lower())
+# Ans = len(Course) * 30
+# print(Ans)
+# print(Course.find('G'))
+# print(Course.find('g'))
+#
+# #in Function
+# print('VINAY' in Course)
+# print(Course.title())
+# print(Course.replace('VINAY','MEGHA'))
 
+#Arithmatic Operation
+# print(10**3)
+
+#Math Function
+# x = 2.3
+# y = 2.9
+# z = -2.22
+# print(round(x))
+# print(round(y))
+# print(abs(z))
+
+# import math
+# x = 2.3
+# print(math.ceil(x))
+# print(math.floor(x))
+
+#Statements in Python
+# is_hot = True
+#
+# if is_hot:
+#     print("Its hot day")
+# else:
+#     print("Its cold day")
