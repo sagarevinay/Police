@@ -42,10 +42,10 @@
 # print(Course.title())
 # print(Course.replace('VINAY','MEGHA'))
 
-#Arithmatic Operation
+# Arithmatic Operation
 # print(10**3)
 
-#Math Function
+# Math Function
 # x = 2.3
 # y = 2.9
 # z = -2.22
@@ -93,7 +93,53 @@
 # else:
 #     print("Man is not Perfect")
 
+#  Weight Converter
+# Weight = int(input("Enter your Weight"))
+# Unit = input('(L)bs or(K)g :')
+# if Unit.upper() == "L":
+#     Converted = Weight*45
+#     print(f"you are {Converted} kilos")
+# else:
+#     Converted = Weight / 0.45
+#     print(f"you are {Converted} pounds")
 
+# While Loop
+# Number = 9
+# i = 0
+# while 3 > i:
+#     Input = int(input("Enter Guess number: "))
+#     i +=1
+#     if Input == Number:
+#         print("You Win")
+#         break
+# else:
+#     print("Sorry, You failed")
 
+# For Loops
+# for item in 'PYTHON':
+#     print(item)
+#
+# for item in ['Vinay','Sagare']:
+#     print(item)
+#
+# for item in range(1,10,):
+#     print(item)
+#
+# for item in range(1,10,3):
+#     print(item)
 
+# NestedLoops
+# for x in range(4):
+#     for y in range(3):
+#         print(f'({x} ,{y})')
 
+# Number = [5,2,5,2,2]
+# for x in Number:
+#     print('x' * x)
+
+# Number_List = [1,2,3,5,65,34,78,98,23,45,7,6,76,89,91,95,33]
+# gretest_number = 0
+# for x in Number_List:
+#     if x > gretest_number:
+#         gretest_number = x
+# print(gretest_number)
