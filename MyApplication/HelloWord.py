@@ -36,8 +36,8 @@
 # print(Ans)
 # print(Course.find('G'))
 # print(Course.find('g'))
-#
-# #in Function
+
+# in Function
 # print('VINAY' in Course)
 # print(Course.title())
 # print(Course.replace('VINAY','MEGHA'))
@@ -58,10 +58,42 @@
 # print(math.ceil(x))
 # print(math.floor(x))
 
-#Statements in Python
-# is_hot = True
+# Statements in Python
+# is_hot = False
+# is_cold = True
 #
 # if is_hot:
 #     print("Its hot day")
-# else:
+# elif is_cold:
 #     print("Its cold day")
+# else:
+#     print("Its Lovely Day")
+
+# good_credit = False
+# house_price = 1000000
+# if good_credit:
+#     House_Price = (house_price*10)/100
+# else:
+#     House_Price = (house_price*20)/100
+# print(f"Your House rent is : {House_Price}")
+
+# AND Operator
+# good_credit = True
+# good_personality = True
+# has_Criminal_Record = True
+# if good_credit and good_personality and not has_Criminal_Record:
+#     print("Man is Perect")
+# else:
+#     print("Man is not Perfect")
+
+# Comparator Operator
+# good_credit = 1000000
+# if good_credit >100000 :
+#     print("Man is Perect")
+# else:
+#     print("Man is not Perfect")
+
+
+
+
+
