@@ -143,3 +143,50 @@
 #     if x > gretest_number:
 #         gretest_number = x
 # print(gretest_number)
+
+# 2 Dimensional List
+# matrix = [
+#     [1,2,3],[4,5,6],[7,8,9]
+# ]
+# matrix[0][1] = 2000
+# print(matrix[0][1])
+
+# Numbers = [12,10,34,24]
+# Numbers.append(20)
+# print(Numbers)
+# Numbers.insert(0,111)
+# print(Numbers)
+# Numbers.remove(111)
+# Numbers.sort()
+# print(Numbers)
+
+# Numbers = [1,2,3,4,5,3,4]
+# uniques = []
+# for x in Numbers:
+#     if x not in uniques:
+#         uniques.append(x)
+# print(uniques)
+
+# Tuple Concept
+# Numbers = (1,2,3,4,5)
+# print(Numbers[0])
+# Numbers[0] = 12  #TypeError: 'tuple' object does not support item assignment
+# print(Numbers[0])
+
+# Tuple Unpacking Concept
+# Numbers = (1,2,3,4,5)
+# x,y,z,a,b = Numbers
+# print(x,y)
+
+# Exceptional handling
+# try:
+#     Number = input("Enter the number")
+#     Answer = int(Number) * 10
+#     print(f'your answer is: {Answer}')
+#     Number1 = 20/ int(Number)
+#     print(Number1)
+# except ZeroDivisionError:
+#     print("Zero dividation error")
+# except ValueError:
+#     print("Invalide input")
+
