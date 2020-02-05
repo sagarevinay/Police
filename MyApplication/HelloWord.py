@@ -190,3 +190,68 @@
 # except ValueError:
 #     print("Invalide input")
 
+# class concept
+# class Example:
+#     def Numbers(self):
+#         Num = input("enter your number: ")
+#         if int(Num)>10 :
+#             print (f'{Num} is greater than 10')
+#         else:
+#             print(f'{Num} is less than 10')
+#     def String(self):
+#         Stirngs = input("Enter a string :")
+#         print(f'you have enterd: {Stirngs}')
+#
+# Numerical = Example()
+# Numerical.Numbers()
+# Numerical.String()
+
+# Accessing methods from anather class
+# import NumString
+# NumString.Numbers(self=2)
+# NumString.String(self=1)
+
+# Random Function
+# import random
+#
+# class Random_fun: 
+#     def Ran(self):
+#         members = ["vinay","satish","naresh","paras"]
+#         first = random.randint(1,2)
+#         second = random.choice(members)
+#         return (first,second)
+#
+# Answer = Random_fun()
+# print(Answer.Ran())
+#
+# def factorial(x):
+#     if x == 1:
+#         return 1
+#     else:
+#         return x * factorial(x - 1)
+#
+# print(f'Your answer is :{factorial(5)}')
+
+# Name = input("Please enter your name: ")
+# Surname = input("Please enter your surname: ")
+#
+# message = "Hello %s %s" %(Name, Surname)
+# print(message)
+
+# def concatinate(phrase):
+#     interrogatives = ("how", "what", "what")
+#     capitalized = phrase.capitalize()
+#     if phrase.startswith(interrogatives):
+#         return "{}?".format(capitalized)
+#     else:
+#         return "{}.".format(capitalized)
+#
+# results = []
+# while True:
+#     user_input = input("say something: ")
+#     if user_input=="end":
+#         break
+#     else:
+#         results.append(concatinate(user_input))
+#
+# print(" ".join(results))
