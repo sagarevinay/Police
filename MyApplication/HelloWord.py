@@ -261,7 +261,7 @@
 # Num_temp = [Num / 10 for Num in number_list]
 # print(Num_temp)
 
-number_list = [200, 320, -345, 243, 435]
+# number_list = [200, 320, -345, 243, 435]
 # for Num in number_list:
 #     if Num < 0:
 #         Num_temp = (Num * -1) / 10
@@ -273,3 +273,11 @@ number_list = [200, 320, -345, 243, 435]
 # print(Num_temp)
 # Num_temp = [Num / 10 for Num in number_list if Num > 0]
 # print(Num_temp)
+
+# File operations
+# myfile = open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt")
+# print(myfile.read())
+#
+# with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt") as myfile:
+#     content = myfile.read()
+#     print(content)
