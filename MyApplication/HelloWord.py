@@ -278,6 +278,12 @@
 # myfile = open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt")
 # print(myfile.read())
 #
+# with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt","w") as myfile:
+#     myfile.write("Tomato \n Onion")
+#
+# with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt","a") as myfile:
+#     myfile.write("\nTomato \n Onion")/
+#
 # with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt") as myfile:
 #     content = myfile.read()
 #     print(content)
