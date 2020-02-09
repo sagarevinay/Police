@@ -282,8 +282,35 @@
 #     myfile.write("Tomato \n Onion")
 #
 # with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt","a") as myfile:
-#     myfile.write("\nTomato \n Onion")/
+#     myfile.write("\nTomato \n Onion")
+#
+# with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt","a+") as myfile:
+#     myfile.write("\nTomato \n Onion")
+#
 #
 # with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt") as myfile:
 #     content = myfile.read()
 #     print(content)
+
+
+# import time
+#
+# while True:
+#     with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt") as myfile:
+#         content = myfile.read()
+#         print(content)
+#         time.sleep(10)
+
+
+# import os
+# import time
+#
+# while True:
+#     if os.path.exists("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt"):
+#         with open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/fruits.txt") as myfile:
+#             content = myfile.read()
+#             print(content)
+#             time.sleep(10)
+#     else:
+#         print("File not found")
+#         time.sleep(100)
