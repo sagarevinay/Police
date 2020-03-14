@@ -314,34 +314,55 @@
 #     else:
 #         print("File not found")
 #         time.sleep(100)
-import json
-from difflib import get_close_matches
-
-file = json.load(open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/data.json"))
 
 
-def meaning(w):
-    w = w.lower()
-    if w in file:
-        return file[w]
-    elif len(get_close_matches(w, file.keys())) > 0:
-        sent = input(
-            "Did you mean %s instead. Enter Y if yes OR Enter N if No: " % get_close_matches(w, file.keys())[0])
-        if sent == "Y":
-            return file[get_close_matches(w, file.keys())[0]]
-        elif sent == "N":
-            return "Word is not matching enter another word"
-        else:
-            return "we did not understand your entry "
+############################################Dictionary project##########################################################
 
-    else:
-        return "Enter the another word. you have entered wrong word"
+# import json
+# from difflib import get_close_matches
+#
+# file = json.load(open("/home/vinay/PycharmProjects/Police/Police/MyApplication/venv/data.json"))
+#
+#
+# def meaning(w):
+#     w = w.lower()
+#     if w in file:
+#         return file[w]
+#     elif len(get_close_matches(w, file.keys())) > 0:
+#         sent = input(
+#             "Did you mean %s instead. Enter Y if yes OR Enter N if No: " % get_close_matches(w, file.keys())[0])
+#         if sent == "Y":
+#             return file[get_close_matches(w, file.keys())[0]]
+#         elif sent == "N":
+#             return "Word is not matching enter another word"
+#         else:
+#             return "we did not understand your entry "
+#
+#     else:
+#         return "Enter the another word. you have entered wrong word"
+#
+#
+# intake = input("Enter the word you want to search:  ")
+# output = meaning(intake)
+# if type(output) == list:
+#     for item in output:
+#         print(item)
+# else:
+#     print("Enter the another word. you have entered wrong word")
+
+#######  OOPS Concept  #####################
+
+class PlayerObject:
+    membership = True
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
 
-intake = input("Enter the word you want to search:  ")
-output = meaning(intake)
-if type(output) == list:
-    for item in output:
-        print(item)
-else:
-    print("Enter the another word. you have entered wrong word")
+Player1 = PlayerObject('vinay', 23)
+Player2 = PlayerObject('rohit', 24)
+print(f' hello my name is {Player1.name} and my age is {str(Player1.age)}')
+print(f' hello my name is {Player2.name} and my age is {str(Player2.age)}')
+print(Player1.membership)
+print(Player2.membership)
