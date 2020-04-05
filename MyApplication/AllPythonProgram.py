@@ -350,19 +350,64 @@
 # else:
 #     print("Enter the another word. you have entered wrong word")
 
-#######  OOPS Concept  #####################
+##############  OOPS Concept  #####################
 
-class PlayerObject:
-    membership = True
+# class PlayerObject:
+#     membership = True
+#
+#     def __init__(self, aname, aage):
+#         self.name = aname
+#         self.age = aage
+#
+#
+# Player1 = PlayerObject('vinay', 23)
+# Player2 = PlayerObject('rohit', 24)
+# print(f' hello my name is {Player1.name} and my age is {str(Player1.age)}')
+# print(f' hello my name is {Player2.name} and my age is {str(Player2.age)}')
+# print(Player1.membership)
+# print(Player2.membership)
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#########  Polymorphism and Inheritance #################
+# class User(object):
+#     def sign_in(self):
+#         print('logged in')
+# 
+# 
+# class Archer(User):  ### Inheritance
+#     def __init__(self, range, power):
+#         self.range = range
+#         self.power = power
+# 
+#     def attack(self):
+#             print(f'Archer attacks long range {self.range} m with power {self.power}')
+# 
+# 
+# class Wizard(User):  ### Inheritance
+#     def __init__(self, range, power):
+#         self.range = range
+#         self.power = power
+# 
+#     def attack(self):
+#         print(f'Wizard attacks long range {self.range} m with power {self.power}')
+# 
+# 
+# def player_attack(char):
+#     char.attack()
+# 
+# 
+# wizard1 = Wizard(100, 1000)
+# archer1 = Archer(250, 500)
+# 
+# player_attack(wizard1)
+# player_attack(archer1)
 
+# lambda expression
+my_list = [5, 4, 3]
+new_list = list(map(lambda num: num * 2, my_list))
+print(new_list)
 
-Player1 = PlayerObject('vinay', 23)
-Player2 = PlayerObject('rohit', 24)
-print(f' hello my name is {Player1.name} and my age is {str(Player1.age)}')
-print(f' hello my name is {Player2.name} and my age is {str(Player2.age)}')
-print(Player1.membership)
-print(Player2.membership)
+a = [(1, 2), (5, 4), (3, 1), (4, 6)]
+a.sort()
+print(a)  # with 1st element
+a.sort(key=lambda x: x[1])
+print(a)  # with 2nd element
