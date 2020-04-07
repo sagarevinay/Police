@@ -402,12 +402,57 @@
 # player_attack(archer1)
 
 # lambda expression
-my_list = [5, 4, 3]
-new_list = list(map(lambda num: num * 2, my_list))
-print(new_list)
+# my_list = [5, 4, 3]
+# new_list = list(map(lambda num: num * 2, my_list))
+# print(new_list)
+#
+# a = [(1, 2), (5, 4), (3, 1), (4, 6)]
+# a.sort()
+# print(a)  # with 1st element
+# a.sort(key=lambda x: x[1])
+# print(a)  # with 2nd element
 
-a = [(1, 2), (5, 4), (3, 1), (4, 6)]
-a.sort()
-print(a)  # with 1st element
-a.sort(key=lambda x: x[1])
-print(a)  # with 2nd element
+# my_list = [char for char in 'vinay']
+# my_list1 = [num for num in range(1,100)]
+# print(my_list)
+# print(my_list1)
+
+# Decorators
+# def my_decorator(func):
+#     def decorator():
+#         func()
+#     return decorator()
+#
+#
+# def my_function1():
+#     print('Hello this my function1')
+#
+#
+# def my_function2():
+#     print('Hello this my function2')
+#
+#
+# my_decorator(my_function1)
+# my_decorator(my_function2)
+
+from time import time
+
+
+def timecalculator(func):
+    def wrap(*args, **kwargs):
+        t1 = time()
+        result = func(*args, **kwargs)
+        t2 = time()
+        print(f'took {t2 - t1}')
+        return result
+
+    return wrap
+
+
+@timecalculator
+def long_time():
+    for i in range(100000000):
+        i * 5
+
+
+long_time()
